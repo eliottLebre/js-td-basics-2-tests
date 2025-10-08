@@ -36,3 +36,75 @@
 // 2. Calculez leur BMI et affichez, selon le cas, "Le BMI de Mark est plus élevé que celui de John" ou "Le BMI de John est plus élevé que celui de Mark"
 
 // Écrire un programme qui teste si un nombre entré par l’utilisateur est pair ou impair.
+
+
+const firstName = "John";
+let civilStatus = "single";
+let isMarried = true;
+const johnWeight = 78;
+const johnHeight = 1.69;
+const markWeight= 92;
+const markHeight = 1.95;
+
+
+if (true){
+    console.log("Je suis dans un bloc d'instructions soumis à une condition qui est toujours vraie, je vais donc toujours m'afficher");
+}
+if (false){
+    console.log("Bon, je cause toujours, mais vu que je suis dans un bloc d'instructions soumis à une condition qui est toujours fausse, ce que je dis ne va jamais s'afficher");
+}
+
+
+let number = NaN;
+while (!Number(number)){
+    number = prompt("Entre un nombre"); // Pas compris quand je mets 0 ca ne marche pas
+}
+if (number > 0){
+    console.log(`${number} est positif`);
+} else {
+    console.log("ce nombre est négatif ou null");
+}
+
+
+if (civilStatus === "married"){
+    console.log("John est marié !")
+} else {
+    console.log("John va, on l\'espère, bientôt se marier :)")
+}
+
+civilStatus = "married";
+
+if (civilStatus === "married"){
+    console.log("John est marié !")
+} else {
+    console.log("John va, on l\'espère, bientôt se marier :)")
+}
+
+if (isMarried){
+    console.log("John est marié !")
+} else {
+    console.log("John va, on l\'espère, bientôt se marier :)")
+}
+
+isMarried = false;
+
+if (isMarried){
+    console.log("John est marié !")
+} else {
+    console.log("John va, on l\'espère, bientôt se marier :)")
+}
+
+const BMIJohn = johnWeight / (johnHeight * johnHeight);
+const BMIMark = markWeight / (markHeight * markHeight);
+
+if (BMIJohn < BMIMark){
+    console.log("Le BMI de Mark est plus élevé que celui de John")
+}else {
+    console.log("Le BMI de John est plus élevé que celui de Mark")
+}
+
+if (number % 2){
+    console.log("nombre impaire")
+} else {
+    console.log("nombre paire")
+}

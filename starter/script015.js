@@ -73,3 +73,82 @@
 // c) s'il pleut, affichez "Sortez en blouson."
 // d) s'il neige, affichez "Restez au chaud à la maison."
 // e) dans tous les autres cas (si la personne n'a
+
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
+
+const nombre = 50;
+if (nombre >= 0 && nombre <= 100) {
+    console.log(`${nombre} est compris entre 0 et 100`);
+} else {
+    console.log(`${nombre} n'est PAS compris entre 0 et 100`);
+}
+
+console.log(true || true);
+console.log(true || false);
+console.log(false || true);
+console.log(false || false);
+
+const nombre2 = 150;
+if (nombre2 < 0 || nombre2 > 100) {
+    console.log(`${nombre2} est en dehors de l'intervalle [0, 100]`);
+} else {
+    console.log(`${nombre2} est dans l'intervalle [0, 100]`);
+}
+
+console.log(!true);
+console.log(!false);
+
+const nombre3 = 80;
+if (!(nombre3 > 100)) {
+    console.log(`${nombre3} est inférieur ou égal à 100`);
+} else {
+    console.log(`${nombre3} est supérieur à 100`);
+}
+
+const nombre4 = -5;
+if (nombre4 > 0) {
+    console.log(`${nombre4} est positif`);
+} else {
+    if (nombre4 < 0) {
+        console.log(`${nombre4} est négatif`);
+    } else {
+        console.log(`${nombre4} est nul`);
+    }
+}
+
+const nombre5 = 0;
+if (nombre5 > 0) {
+    console.log(`${nombre5} est positif`);
+} else if (nombre5 < 0) {
+    console.log(`${nombre5} est négatif`);
+} else {
+    console.log(`${nombre5} est nul`);
+}
+
+const firstName = "John";
+const age = 22;
+if (age < 13) {
+    console.log(`${firstName} est un petit garçon.`);
+} else if (age >= 13 && age < 20) {
+    console.log(`${firstName} est un adolescent.`);
+} else if (age >= 20 && age < 30) {
+    console.log(`${firstName} est un jeune homme.`);
+} else {
+    console.log(`${firstName} est un homme.`);
+}
+
+const meteo = "pluie";
+if (meteo === "soleil") {
+    console.log("Sortez en t-shirt.");
+} else if (meteo === "vent") {
+    console.log("Sortez en pull.");
+} else if (meteo === "pluie") {
+    console.log("Sortez en blouson.");
+} else if (meteo === "neige") {
+    console.log("Restez au chaud à la maison.");
+} else {
+    console.log("Je n'ai pas compris !");
+}
